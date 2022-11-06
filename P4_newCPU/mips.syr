@@ -1,0 +1,166 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.28 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.30 secs
+ 
+--> Reading design: mips.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "mips.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "mips"
+Output Format                      : NGC
+Target Device                      : xc6slx100-2-fgg676
+
+---- Source Options
+Top Module Name                    : mips
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "C:\Users\10791\P4_newCPU\mux3.v" into library work
+Parsing module <mux3>.
+Analyzing Verilog file "C:\Users\10791\P4_newCPU\mux2.v" into library work
+Parsing module <mux2>.
+Analyzing Verilog file "C:\Users\10791\P4_newCPU\WDgen.v" into library work
+Parsing module <WDgen>.
+Analyzing Verilog file "C:\Users\10791\P4_newCPU\shifter_2bit.v" into library work
+Parsing module <shifter_2bit>.
+Analyzing Verilog file "C:\Users\10791\P4_newCPU\sbgen.v" into library work
+Parsing module <sbgen>.
+Analyzing Verilog file "C:\Users\10791\P4_newCPU\PCcalculate.v" into library work
+Parsing module <PCcalculate>.
+Analyzing Verilog file "C:\Users\10791\P4_newCPU\lbgen.v" into library work
+Parsing module <lbgen>.
+Analyzing Verilog file "C:\Users\10791\P4_newCPU\jalgen.v" into library work
+Parsing module <jalgen>.
+Analyzing Verilog file "C:\Users\10791\P4_newCPU\highgen.v" into library work
+Parsing module <highgen>.
+Analyzing Verilog file "C:\Users\10791\P4_newCPU\extender.v" into library work
+Parsing module <extender>.
+Analyzing Verilog file "C:\Users\10791\P4_newCPU\datapath\pc.v" into library work
+Parsing module <pc>.
+Analyzing Verilog file "C:\Users\10791\P4_newCPU\datapath\im.v" into library work
+Parsing module <im>.
+Analyzing Verilog file "C:\Users\10791\P4_newCPU\datapath\grf.v" into library work
+Parsing module <grf>.
+Analyzing Verilog file "C:\Users\10791\P4_newCPU\datapath\dm.v" into library work
+Parsing module <dm>.
+Analyzing Verilog file "C:\Users\10791\P4_newCPU\datapath\alu.v" into library work
+Parsing module <alu>.
+Analyzing Verilog file "C:\Users\10791\P4_newCPU\controller\controller.v" into library work
+Parsing module <controller>.
+Analyzing Verilog file "C:\Users\10791\P4_newCPU\adder.v" into library work
+Parsing module <adder>.
+Analyzing Verilog file "C:\Users\10791\P4_newCPU\datapath\datpath1.v" into library work
+Parsing module <datapath>.
+Analyzing Verilog file "C:\Users\10791\P4_newCPU\mips.v" into library work
+Parsing module <mips>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <mips>.
+
+Elaborating module <datapath>.
+
+Elaborating module <controller>.
+WARNING:HDLCompiler:1127 - "C:\Users\10791\P4_newCPU\datapath\datpath1.v" Line 59: Assignment to regDist ignored, since the identifier is never used
+
+Elaborating module <pc>.
+
+Elaborating module <im>.
+Reading initialization file \"code.txt\".
+WARNING:HDLCompiler:1670 - "C:\Users\10791\P4_newCPU\datapath\im.v" Line 27: Signal <mem> in initial block is partially initialized.
+
+Elaborating module <grf>.
+
+Elaborating module <dm>.

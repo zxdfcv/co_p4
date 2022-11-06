@@ -1,0 +1,18 @@
+ISim log file
+Running: C:\Users\10791\P4_newCPU\test_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb C:/Users/10791/P4_newCPU/test_isim_beh.wdb 
+ISim P.20131013 (signature 0x7708f090)
+----------------------------------------------------------------------
+WARNING:Security:42 - Your software subscription period has lapsed. Your current version of Xilinx tools will continue to function, but you no longer qualify for Xilinx software updates or new releases.
+
+
+----------------------------------------------------------------------
+This is a Full version of ISim.
+WARNING: File "C:/Users/10791/P4_newCPU/datapath/datpath1.v" Line 96.  For instance datapath/lbgen/, width 32 of formal port WriteData is not equal to width 1 of actual signal WriteData.
+WARNING: File "C:/Users/10791/P4_newCPU/datapath/datpath1.v" Line 96.  For instance datapath/mux2_2/, width 32 of formal port x0 is not equal to width 1 of actual signal WriteData.
+WARNING: File "C:/Users/10791/P4_newCPU/datapath/datpath1.v" Line 98.  For instance datapath/mux2_2/, width 32 of formal port result is not equal to width 1 of actual signal WriteDataF.
+Time resolution is 1 ps
+# onerror resume
+# wave add /
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.

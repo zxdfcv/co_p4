@@ -1,0 +1,58 @@
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o C:/Users/10791/P4_CPU_PLUS/test_isim_beh.exe -prj C:/Users/10791/P4_CPU_PLUS/test_beh.prj work.test work.glbl 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 2
+Turning on mult-threading, number of parallel sub-compilation jobs: 4 
+Determining compilation order of HDL files
+Analyzing Verilog file "C:/Users/10791/P4_CPU_PLUS/P4_code/mux3.v" into library work
+Analyzing Verilog file "C:/Users/10791/P4_CPU_PLUS/P4_code/mux2.v" into library work
+Analyzing Verilog file "C:/Users/10791/P4_CPU_PLUS/P4_code/WDgen.v" into library work
+Analyzing Verilog file "C:/Users/10791/P4_CPU_PLUS/P4_code/shifter_2bit.v" into library work
+Analyzing Verilog file "C:/Users/10791/P4_CPU_PLUS/P4_code/sbgen.v" into library work
+Analyzing Verilog file "C:/Users/10791/P4_CPU_PLUS/P4_code/PCcalculate.v" into library work
+Analyzing Verilog file "C:/Users/10791/P4_CPU_PLUS/P4_code/pc.v" into library work
+Analyzing Verilog file "C:/Users/10791/P4_CPU_PLUS/P4_code/mux3_5bit.v" into library work
+Analyzing Verilog file "C:/Users/10791/P4_CPU_PLUS/P4_code/lbgen.v" into library work
+Analyzing Verilog file "C:/Users/10791/P4_CPU_PLUS/P4_code/jalgen.v" into library work
+Analyzing Verilog file "C:/Users/10791/P4_CPU_PLUS/P4_code/im.v" into library work
+Analyzing Verilog file "C:/Users/10791/P4_CPU_PLUS/P4_code/highgen.v" into library work
+Analyzing Verilog file "C:/Users/10791/P4_CPU_PLUS/P4_code/grf.v" into library work
+Analyzing Verilog file "C:/Users/10791/P4_CPU_PLUS/P4_code/extender.v" into library work
+Analyzing Verilog file "C:/Users/10791/P4_CPU_PLUS/P4_code/dm.v" into library work
+Analyzing Verilog file "C:/Users/10791/P4_CPU_PLUS/P4_code/controller.v" into library work
+Analyzing Verilog file "C:/Users/10791/P4_CPU_PLUS/P4_code/alu.v" into library work
+Analyzing Verilog file "C:/Users/10791/P4_CPU_PLUS/P4_code/adder.v" into library work
+Analyzing Verilog file "C:/Users/10791/P4_CPU_PLUS/P4_code/datpath1.v" into library work
+Analyzing Verilog file "C:/Users/10791/P4_CPU_PLUS/P4_code/mips.v" into library work
+Analyzing Verilog file "C:/Users/10791/P4_CPU_PLUS/test.v" into library work
+Analyzing Verilog file "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling module controller
+Compiling module pc
+Compiling module im
+Compiling module grf
+Compiling module dm
+Compiling module alu
+Compiling module mux3
+Compiling module mux2
+Compiling module PCcalculate
+Compiling module highgen
+Compiling module WDgen
+Compiling module mux3_5bit
+Compiling module adder
+Compiling module extender
+Compiling module shifter_2bit
+Compiling module jalgen
+Compiling module lbgen
+Compiling module sbgen
+Compiling module datapath
+Compiling module mips
+Compiling module test
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 19 sub-compilation(s) to finish...
+WARNING:Simulator - Unable to copy libPortabilityNOSH.dll to the simulation executable directory: boost::filesystem::copy_file: 系统找不到指定的路径。, "isim\test_isim_beh.exe.sim\libPortability.dll".
+Compiled 22 Verilog Units
+Built simulation executable C:/Users/10791/P4_CPU_PLUS/test_isim_beh.exe
+Fuse Memory Usage: 27624 KB
+Fuse CPU Usage: 358 ms
